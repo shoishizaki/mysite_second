@@ -10,6 +10,12 @@ from .models import Question
 from .models import Choice
 
 # Create your views here.
+def index_template(request):
+    myapp_data = {
+        'app':'Django'
+    }
+    return render(request, 'polls/index_template.html', myapp_data)
+
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
     context_object_name = 'latest_question_list'
