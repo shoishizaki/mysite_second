@@ -9,7 +9,7 @@
 <p>I'm {{ name }}</p>
 <p>
     {% for i in num %}
-    {{ i }}<br>
+    This number is {{ i }}<br>
     {% endfor %}
 {% if is_weekday %}
     <p>Today is weekday!</p>
@@ -17,5 +17,6 @@
     <p>Today is holiday!</p>
 {% endif %}
 </p>
+{{ app|length }}
 </body>
 </html>
