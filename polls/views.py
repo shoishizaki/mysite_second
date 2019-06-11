@@ -10,6 +10,9 @@ from .models import Question
 from .models import Choice
 
 # Create your views here.
+def index_page(request, id):
+    return HttpResponse('This is urls test id =' + str(id))
+
 def index_template(request):
     myapp_data = {
         'app':'Django',
