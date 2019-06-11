@@ -15,7 +15,8 @@ def index_template(request):
         'app':'Django',
         'name':'sho',
         'num':range(1,10),
-        'is_weekday':True,
+        'is_weekday':False,
+        'superday':True,
     }
     return render(request, 'polls/index_template.html', myapp_data)
 
