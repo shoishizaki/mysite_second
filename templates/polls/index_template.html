@@ -6,5 +6,16 @@
 </head>
 <body>
 <p>This is {{ app }}.</p>
+<p>I'm {{ name }}</p>
+<p>
+    {% for i in num %}
+    {{ i }}<br>
+    {% endfor %}
+{% if is_weekday %}
+    <p>Today is weekday!</p>
+{% else %}
+    <p>Today is holiday!</p>
+{% endif %}
+</p>
 </body>
 </html>
